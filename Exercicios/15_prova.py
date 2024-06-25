@@ -15,25 +15,22 @@
 
 #Variáveis
 
-n_1 = 0
-n_2 = 0
-ran = (n_1, n_2)
+n1 = 0
+n2 = 0
 resto = 0
-sequencia = 0
-multiplicador = 0
 
 #entrada
-n_1 = int(input('escreva um numero inteiro: '))
-n_2 = int(input('escreva um outro numero, menor que o primeiro e inteiro: '))
+n1 = int(input('escreva o valor inicial do seu range: '))
+n2 = int(input('escreva o valor final do seu range: '))
 
 
 #processamento
 
 
-for sequencia in range(n_1, n_2):
+for numrange in range(n1, n2):
 
-    resto = sequencia%2
-
-    print(sequencia)
-
+    resto = numrange%2 #resto 0 é par, resto 1 é impar
+    
+    if resto == 1:
+        print(numrange)
 
